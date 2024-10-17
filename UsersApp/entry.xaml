@@ -1,0 +1,50 @@
+﻿<Window x:Class="UsersApp.entry"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UsersApp"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Вход" Height="400" Width="597">
+    <Grid Background="Aqua">
+        <Border  MinWidth="300" Margin="15" Background="AliceBlue " VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20" >
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightCoral" ShadowDepth="0"></DropShadowEffect>
+
+
+            </Border.Effect>
+            <StackPanel>
+                <Grid Margin="0 0 0 20">
+                    <Button Click="ButtonRegist_Click" HorizontalAlignment="Left" Content="Регистрация" Margin="376,0,0,0"/>
+                    <TextBlock Text="Вход" FontSize="30" FontWeight="Black" Margin="0,-6,0,6"/>
+                </Grid>
+                <TextBox x:Name="TextBoxxLogin"  materialDesign:HintAssist.Hint="Введите логин" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <PasswordBox x:Name="PassvBox" materialDesign:HintAssist.Hint="Введите Пароль" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
+
+                <Button Content="Войти" Margin="0 20" Click="ButtonEntry_Click"/>
+
+            </StackPanel>
+        </Border>
+        <Border  MinWidth="400" Margin="15,0,15,0" Background="AliceBlue " VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20" >
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightCoral" ShadowDepth="0"/>
+
+
+            </Border.Effect>
+            <StackPanel>
+                <Grid Margin="0 0 0 10">
+                    <Button Click="ButtonRegist_Click" Content="Регистрация" Margin="376,0,0,0" VerticalAlignment="Center"/>
+                    <TextBlock Text="Вход" FontSize="30" FontWeight="Black" Margin="0,-6,186,6"/>
+                </Grid>
+                <TextBox x:Name="TextBoxLogin1"  materialDesign:HintAssist.Hint="Введите логин" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <PasswordBox x:Name="PassBox1" materialDesign:HintAssist.Hint="Введите Пароль" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
+
+                <Button Content="Войти" Margin="0 20" Click="ButtonEntry_Click"/>
+
+            </StackPanel>
+        </Border>
+
+
+    </Grid>
+</Window>
